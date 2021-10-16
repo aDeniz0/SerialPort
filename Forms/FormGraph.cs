@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CircularProgressBar;
 
 namespace Serialport
 {
@@ -44,8 +45,18 @@ namespace Serialport
 
         }
 
-       
+        private void FormGraph_Load(object sender, EventArgs e)
+        {
+            circularProgressBar1.Value = 30;
+            circularProgressBar2.Value = 80;
+            circularProgressBar3.Value = 50;
+        }
 
-        
+        private void round_reset_Click(object sender, EventArgs e)
+        {
+            circularProgressBar1.Value = 0;
+            circularProgressBar2.Value = 0;
+            circularProgressBar3.Value = 0;
+        }
     }
 }
