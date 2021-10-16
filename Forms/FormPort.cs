@@ -70,6 +70,8 @@ namespace Serialport
             if(serialPort1.PortName == comboBox1.SelectedItem.ToString())
             {
                 serialPort1.Open();
+
+                serialPort1.BaudRate = 9600;
             }
            
         }
