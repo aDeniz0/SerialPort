@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CircularProgressBar;
 
 namespace Serialport
 {
@@ -27,10 +20,10 @@ namespace Serialport
             sicaklik.Text = receiveddata.ToString() + "*C";
             System.Threading.Thread.Sleep(100);
 
-            if(gosterge.Value<30)
+            if (gosterge.Value < 30)
             {
                 gosterge.ForeColor = Color.BlueViolet;
-                
+
             }
             if (gosterge.Value > 30 && gosterge.Value < 50)
             {
@@ -58,5 +51,7 @@ namespace Serialport
             circularProgressBar2.Value = 0;
             circularProgressBar3.Value = 0;
         }
+
+        
     }
 }
