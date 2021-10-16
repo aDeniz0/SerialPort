@@ -52,28 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGraph.cs">
+    <Compile Include="Forms\FormGraph.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGraph.Designer.cs">
+    <Compile Include="Forms\FormGraph.Designer.cs">
       <DependentUpon>FormGraph.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormHome.cs">
+    <Compile Include="Forms\FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHome.Designer.cs">
+    <Compile Include="Forms\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormOpen.cs">
+    <Compile Include="Forms\FormOpen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOpen.Designer.cs">
+    <Compile Include="Forms\FormOpen.Designer.cs">
       <DependentUpon>FormOpen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPort.cs">
+    <Compile Include="Forms\FormPort.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPort.Designer.cs">
+    <Compile Include="Forms\FormPort.Designer.cs">
       <DependentUpon>FormPort.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -81,16 +81,16 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGraph.resx">
+    <EmbeddedResource Include="Forms\FormGraph.resx">
       <DependentUpon>FormGraph.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHome.resx">
+    <EmbeddedResource Include="Forms\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormOpen.resx">
+    <EmbeddedResource Include="Forms\FormOpen.resx">
       <DependentUpon>FormOpen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPort.resx">
+    <EmbeddedResource Include="Forms\FormPort.resx">
       <DependentUpon>FormPort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
