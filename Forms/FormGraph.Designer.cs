@@ -40,6 +40,9 @@ namespace Serialport
             this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
             this.circularProgressBar3 = new CircularProgressBar.CircularProgressBar();
             this.round_reset = new Serialport.RoundButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gosterge
@@ -67,10 +70,10 @@ namespace Serialport
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(231, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 21);
+            this.label1.Size = new System.Drawing.Size(113, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sıcaklık :";
             // 
@@ -87,7 +90,7 @@ namespace Serialport
             this.circularProgressBar1.Location = new System.Drawing.Point(144, 245);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar1.OuterColor = System.Drawing.SystemColors.ScrollBar;
             this.circularProgressBar1.OuterMargin = -25;
             this.circularProgressBar1.OuterWidth = 26;
             this.circularProgressBar1.ProgressColor = System.Drawing.SystemColors.ActiveCaption;
@@ -118,7 +121,7 @@ namespace Serialport
             this.circularProgressBar2.Location = new System.Drawing.Point(366, 245);
             this.circularProgressBar2.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar2.Name = "circularProgressBar2";
-            this.circularProgressBar2.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar2.OuterColor = System.Drawing.SystemColors.ScrollBar;
             this.circularProgressBar2.OuterMargin = -25;
             this.circularProgressBar2.OuterWidth = 26;
             this.circularProgressBar2.ProgressColor = System.Drawing.SystemColors.ActiveCaption;
@@ -149,7 +152,7 @@ namespace Serialport
             this.circularProgressBar3.Location = new System.Drawing.Point(574, 245);
             this.circularProgressBar3.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar3.Name = "circularProgressBar3";
-            this.circularProgressBar3.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar3.OuterColor = System.Drawing.SystemColors.ScrollBar;
             this.circularProgressBar3.OuterMargin = -25;
             this.circularProgressBar3.OuterWidth = 26;
             this.circularProgressBar3.ProgressColor = System.Drawing.SystemColors.ActiveCaption;
@@ -185,12 +188,48 @@ namespace Serialport
             this.round_reset.UseVisualStyleBackColor = true;
             this.round_reset.Click += new System.EventHandler(this.round_reset_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Info;
+            this.label2.Location = new System.Drawing.Point(166, 425);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 23);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Serial_Data";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Info;
+            this.label3.Location = new System.Drawing.Point(387, 425);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 23);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Serial_Data";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Info;
+            this.label4.Location = new System.Drawing.Point(598, 425);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 23);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Serial_Data";
+            // 
             // FormGraph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.round_reset);
             this.Controls.Add(this.circularProgressBar3);
             this.Controls.Add(this.circularProgressBar2);
@@ -220,5 +259,8 @@ namespace Serialport
         private CircularProgressBar.CircularProgressBar circularProgressBar2;
         private CircularProgressBar.CircularProgressBar circularProgressBar3;
         private RoundButton round_reset;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

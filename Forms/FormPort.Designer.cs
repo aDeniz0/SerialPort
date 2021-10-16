@@ -120,9 +120,8 @@ namespace Serialport
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
             this.label1.Location = new System.Drawing.Point(432, 287);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 33);
+            this.label1.Size = new System.Drawing.Size(0, 33);
             this.label1.TabIndex = 6;
-            this.label1.Text = "1";
             // 
             // label2
             // 

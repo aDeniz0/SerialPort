@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serialport.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -81,6 +82,20 @@ namespace Serialport
             if1.Show();
             if1.Dock = DockStyle.Fill;
             if1.BringToFront();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            FormGPIO if1 = new FormGPIO();
+            if1.TopLevel = false;
+            panel3.Controls.Add(if1);
+            if1.Show();
+            if1.Dock = DockStyle.Fill;
+            if1.BringToFront();
+
+           
+
         }
     }
 }

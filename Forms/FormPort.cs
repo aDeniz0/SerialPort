@@ -67,13 +67,14 @@ namespace Serialport
 
         private void Baglan_Click(object sender, EventArgs e)
         {
-            if(serialPort1.PortName == comboBox1.SelectedItem.ToString())
+           
+            if (serialPort1.PortName == comboBox1.SelectedItem.ToString())
             {
                 serialPort1.Open();
 
                 serialPort1.BaudRate = 9600;
             }
-           
+       
         }
 
         int pwm;
