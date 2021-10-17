@@ -134,6 +134,7 @@ namespace Serialport
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1195, 582);
             this.panel3.TabIndex = 2;
+           
             // 
             // pictureBox1
             // 

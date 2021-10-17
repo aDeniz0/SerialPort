@@ -101,5 +101,7 @@ namespace Serialport
             if1.Dock = DockStyle.Fill;
             if1.BringToFront();
         }
+
+       
     }
 }
