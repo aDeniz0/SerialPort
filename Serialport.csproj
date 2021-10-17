@@ -76,6 +76,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDoc.Designer.cs">
+      <DependentUpon>FormDoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormGPIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDoc.resx">
+      <DependentUpon>FormDoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormGPIO.resx">
       <DependentUpon>FormGPIO.cs</DependentUpon>

@@ -52,6 +52,7 @@ namespace Serialport
             this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.circularPictureBox1.TabIndex = 1;
             this.circularPictureBox1.TabStop = false;
+            
             // 
             // FormOpen
             // 
