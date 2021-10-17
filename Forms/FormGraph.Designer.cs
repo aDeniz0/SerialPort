@@ -207,7 +207,7 @@ namespace Serialport
             series1.LabelBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             series1.LabelForeColor = System.Drawing.Color.Maroon;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "data";
             this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(600, 323);
             this.chart1.TabIndex = 15;

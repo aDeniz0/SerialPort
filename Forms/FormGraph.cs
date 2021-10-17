@@ -10,7 +10,14 @@ namespace Serialport
         public FormGraph()
         {
             InitializeComponent();
+
+            if(serialPort1.IsOpen)
+            {
+                timer1.Start();
+                timer2.Start();
+            }
         }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {

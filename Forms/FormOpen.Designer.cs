@@ -52,7 +52,6 @@ namespace Serialport
             this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.circularPictureBox1.TabIndex = 1;
             this.circularPictureBox1.TabStop = false;
-            
             // 
             // FormOpen
             // 
@@ -63,6 +62,7 @@ namespace Serialport
             this.Controls.Add(this.circularPictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOpen";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

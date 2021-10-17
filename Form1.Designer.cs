@@ -134,7 +134,6 @@ namespace Serialport
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1195, 582);
             this.panel3.TabIndex = 2;
-           
             // 
             // pictureBox1
             // 
@@ -289,6 +288,7 @@ namespace Serialport
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
