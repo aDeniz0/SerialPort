@@ -13,7 +13,7 @@ namespace Serialport
 
 
         }
-
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -102,6 +102,17 @@ namespace Serialport
             if1.BringToFront();
         }
 
-       
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            plcForm if1 = new plcForm();
+            if1.TopLevel = false;
+            panel3.Controls.Add(if1);
+            if1.Show();
+            if1.Dock = DockStyle.Fill;
+            if1.BringToFront();
+        }
+
+        
     }
 }

@@ -5,13 +5,16 @@ using System.Windows.Forms;
 
 namespace Serialport
 {
+   
     public partial class FormPort : Form
     {
+        
         public FormPort()
         {
             InitializeComponent();
+            
         }
-
+        
         private void FormPort_Load(object sender, EventArgs e)
         {
             //string[] portlar = SerialPort.GetPortNames();
@@ -24,6 +27,7 @@ namespace Serialport
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             serialPort1.PortName = comboBox1.SelectedItem.ToString();
+
             //serialPort1.Open();
         }
 
@@ -66,6 +70,8 @@ namespace Serialport
                 serialPort1.Open();
 
                 serialPort1.BaudRate = 9600;
+
+              
             }
 
         }

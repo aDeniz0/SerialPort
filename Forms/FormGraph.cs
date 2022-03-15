@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO.Ports;
+using Serialport;
 
 namespace Serialport
 {
@@ -9,13 +10,10 @@ namespace Serialport
     {
         public FormGraph()
         {
-            InitializeComponent();
 
-            if(serialPort1.IsOpen)
-            {
-                timer1.Start();
-                timer2.Start();
-            }
+            InitializeComponent();
+           
+            
         }
         
 
@@ -49,9 +47,28 @@ namespace Serialport
 
         private void FormGraph_Load(object sender, EventArgs e)
         {
-            circularProgressBar1.Value = 30;
-            circularProgressBar2.Value = 80;
-            
+            //circularProgressBar1.Value = 30;
+            //circularProgressBar2.Value = 80;
+
+            //comboBox1.DataSource = SerialPort.GetPortNames();
+
+            //if (serialPort1.PortName == comboBox1.SelectedItem.ToString())
+            //{
+            //    serialPort1.Open();
+
+            //    serialPort1.BaudRate = 9600;
+
+
+            //}
+
+
+            //if (serialPort1.IsOpen)
+            //{
+            //    // timer1.Start();
+            //    timer2.Start();
+
+            //}
+
         }
 
         private void round_reset_Click(object sender, EventArgs e)
@@ -65,9 +82,15 @@ namespace Serialport
         int min = 0;
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if (serialPort1.IsOpen)
+            try
             {
                 sonuc = serialPort1.ReadLine();
+            }
+            catch
+            {
+                MessageBox.Show("Port Bağlanmadı!");
+            }
+            
                 if (sonuc != null)
                 {
                     graphLab.Text = sonuc + "";
@@ -76,7 +99,7 @@ namespace Serialport
                     max++;
                     min++;
                 }
-            }
+            
 
 
             chart1.ChartAreas[0].AxisX.Minimum = min;
@@ -88,5 +111,7 @@ namespace Serialport
             chart1.ChartAreas[0].AxisX.ScaleView.Zoom(min, max);
 
         }
+
+      
     }
 }

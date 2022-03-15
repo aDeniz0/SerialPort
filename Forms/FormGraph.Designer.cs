@@ -30,10 +30,10 @@ namespace Serialport
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraph));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraph));
             this.gosterge = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
@@ -41,12 +41,13 @@ namespace Serialport
             this.label1 = new System.Windows.Forms.Label();
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
-            this.round_reset = new Serialport.RoundButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.graphLab = new System.Windows.Forms.Label();
+            this.round_reset = new Serialport.RoundButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,24 +145,6 @@ namespace Serialport
             this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.circularProgressBar2.Value = 68;
             // 
-            // round_reset
-            // 
-            this.round_reset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("round_reset.BackgroundImage")));
-            this.round_reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.round_reset.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
-            this.round_reset.FlatAppearance.BorderSize = 0;
-            this.round_reset.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.round_reset.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.round_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.round_reset.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.round_reset.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.round_reset.Location = new System.Drawing.Point(498, 145);
-            this.round_reset.Name = "round_reset";
-            this.round_reset.Size = new System.Drawing.Size(64, 62);
-            this.round_reset.TabIndex = 13;
-            this.round_reset.UseVisualStyleBackColor = true;
-            this.round_reset.Click += new System.EventHandler(this.round_reset_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -227,12 +210,39 @@ namespace Serialport
             this.graphLab.TabIndex = 16;
             this.graphLab.Text = "---";
             // 
+            // round_reset
+            // 
+            this.round_reset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("round_reset.BackgroundImage")));
+            this.round_reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.round_reset.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.round_reset.FlatAppearance.BorderSize = 0;
+            this.round_reset.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.round_reset.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.round_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.round_reset.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.round_reset.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.round_reset.Location = new System.Drawing.Point(498, 145);
+            this.round_reset.Name = "round_reset";
+            this.round_reset.Size = new System.Drawing.Size(64, 62);
+            this.round_reset.TabIndex = 13;
+            this.round_reset.UseVisualStyleBackColor = true;
+            this.round_reset.Click += new System.EventHandler(this.round_reset_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(235, 70);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 17;
+            // 
             // FormGraph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1195, 582);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.graphLab);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label3);
@@ -270,5 +280,6 @@ namespace Serialport
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label graphLab;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
